@@ -11,7 +11,7 @@ st.set_page_config(page_title="Solar Panel Fault Detection", layout="wide")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_CSV = os.path.join(BASE_DIR, "data", "solar_data.csv")
 
-st.sidebar.title("⚡ Controls")
+st.sidebar.title("Controls")
 uploaded_file = st.sidebar.file_uploader("Upload CSV File", type="csv")
 fault_filter = st.sidebar.selectbox("Select Fault Status", ["All", "Faulty", "Healthy"])
 
