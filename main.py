@@ -32,7 +32,6 @@ def load_and_clean(csv_file):
     return df
 
 def predict_fault(df):
-    """Predict faults using the loaded model."""
     predictions = model.predict(df)
     df["fault"] = predictions
     return df
