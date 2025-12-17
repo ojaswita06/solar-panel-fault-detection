@@ -18,7 +18,6 @@ EXPECTED_COLUMNS = [
 ]
 
 def load_and_clean(csv_file):
-    """Load CSV and validate columns."""
     if not os.path.exists(csv_file):
         raise FileNotFoundError(f"CSV file not found at {csv_file}")
     
